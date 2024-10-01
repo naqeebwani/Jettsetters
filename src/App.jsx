@@ -50,7 +50,7 @@ const App = () => {
     <div className='App overflow-x-hidden'>
       <Suspense fallback={<Loader />}>
         <Routes>
-          {/* <Route path='/' element={<Cruise />} />
+          <Route path='/' element={<Cruise />} />
           <Route path='/flight' element={<FlightsPage />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact-us' element={<Contact />} />
@@ -66,7 +66,7 @@ const App = () => {
           <Route path='/packages/north-east' element={<NorthEast />} />
           <Route path='/packages/georgia' element={<Georgia />} />
           <Route path='packages/north-east/darjeeling-sikkim' element={<DarjeelingSikkimDetailPage />} />
-          <Route path='/packages/kashmir/:package' element={<PackageDetails />} /> */}
+          <Route path='/packages/kashmir/:package' element={<PackageDetails />} />
           <Route path='*' element={<div className='min-h-screen flex justify-center items-center text-5xl font-bold'>404 Not Found</div>} />
         </Routes>
       </Suspense>
