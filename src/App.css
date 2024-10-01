@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.change-color {
+    color: #fff;
+}
+
+.dateRange {
+    color: #000;
+    display: flex;
+}
+
+.slick-slider button::before {
+    color: #000;
+}
+
+.slick-slider .slick-next {
+    top: 40%;
+}
+
+.slick-slider .slick-prev {
+    top: 40%;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #fefeec;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #31363F;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 150ms ease-in linear;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #10439F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #222831;
+    box-shadow: inset 0 0 5px #d7550a;
+}
+
+.nav-menu {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    right: 1.5px;
+    overflow: hidden;
+    z-index: 2000;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 5px 10px 10px #365a8895;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    padding-bottom: 5px;
+}
+
+.active {
+    /* display: flex; */
+    visibility: visible;
+    opacity: 100;
+    transform: none;
+}
+
+.logo-head {
+    font-family: "Poetsen One", sans-serif;
+    margin: 40px auto;
+    letter-spacing: 5px;
+    color: #10439F;
+    text-shadow: 3px 2px 1px #59a3e9bb,
+        1px 1px 15px #eef5ff;
+}
+
+
+.hero-flight-image {
+    background-image: url('./assets//flights/heroImg.png');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-position-x: center;
+}
+
+.hero-cruise-image {
+    background-image: url('./assets/images/cruise-hero-bg.jpeg');
+    /* background-repeat: ; */
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+.auto-search::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+}
+
+.about-hero {
+    background-image: url('./assets/images/about-hero-bg.jpeg');
+    /* background-repeat: no-repeat no-repeat; */
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.haz-hero {
+    background-image: url('./assets/packages-img/hajj-tour/hajj-hero-bg.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.dubai-hero {
+    /* background-size: cover; */
+    background-image: url('./assets/packages-img/dubai/dubai-hero-bg.jpeg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.ram-hero {
+    /* background-size: cover; */
+    background-image: url('./assets/packages-img/ram-mandir/ram-hero-bg.jpeg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.europe-hero {
+    background-image: url('./assets/packages-img/europe//europe-bg.jpeg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.kashmir-hero {
+    background-image: url('./assets/packages-img/kashmir/kashmir-bg.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.north-east-hero{
+    background-image: url('./assets/packages-img/north-east/bg-1.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.package-hero-bg{
+    background-image: url('./assets/packages-img/north-east/bg-1.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.georgia-hero{
+    background-image: url('./assets/packages-img/georgia/georgiaImg-6.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.plan-animate {
+    animation: plan 2.5s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95) both;
+}
+
+@keyframes plan {
+    100% {
+        transform: translateX(0%) translateY(0px) rotate(0deg) scale(1);
+        /* opacity: 0; */
+    }
+
+    30% {
+        transform: translateX(0%) translateY(0px) rotate(-2deg) scale(1);
+        /* opacity: 100; */
+    }
+
+    100% {
+        transform: translateX(100px) translateY(-20px) rotate(-20deg) scale(1.3);
+        /* opacity: 0; */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-hero {
+        background-image: url('./assets/images/about-hero-bg-mobile.jpeg');
+        /* background-repeat: no-repeat no-repeat; */
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    /* .hero-cruise-image {
+        background-image: url('./assets/images/cruise-hero-bg-mobile.jpeg');
+        background-repeat: no-repeat no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    } */
+}
+
+@media only screen and (max-width: 760px) {
+    .hero-cruise-image {
+        background-image: url('./assets/images/cruise-hero-bg-mobile.jpeg');
+        background-repeat: no-repeat no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .haz-hero {
+        background-image: url('./assets/packages-img/hajj-tour/hajj-hero-mobile.jpg');
+        background-repeat: no-repeat no-repeat;
+        background-position: center;
+        /* background-size: 100% 100%; */
+        background-size: cover;
+    }
+
+    .hajj-box {
+        align-items: center;
+    }
+
+    .dubai-hero {
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+
+    .ram-hero {
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+
+    .europe-hero {
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+
+    .kashmir-hero {
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+
+    .north-east-hero{
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+    .georgia-hero{
+        background-size: cover;
+        background-repeat: space;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .haz-img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .haz-img img {
+        object-fit: fill;
+        object-position: center;
+    }
+}
+
+/* .policy-box:checked{
+    background-color: red;
+} */
+
+
+.up-animate-head,
+.up-animate-para {
+    filter: blur(20px);
+    animation: up 0.5s 1s linear 1 forwards;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+@keyframes up {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.up-animate-para {
+    animation-delay: 1.2s !important;
+}
+
+/* Dubai Activities Page  */
+
+
