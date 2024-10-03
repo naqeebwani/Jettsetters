@@ -57,10 +57,10 @@ const App = () => {
           <Route path='/covid-19' element={<CovidFAQ />} />
           <Route path='/terms-conditions' element={<TermsConditions />} />
           <Route path='/packages' element={<Packages />} />
-          <Route path='/packages/hajj&umrah' element={<Hajj />} />
+          {/* <Route path='/packages/hajj&umrah' element={<Hajj />} /> */}
           <Route path='/packages/dubai' element={<Dubai />} />
           <Route path='/packages/dubai/activities' element={<DubaiActivities />} />
-          <Route path='/packages/ram-mandir-tour' element={<RamMandir />} />
+          {/* <Route path='/packages/ram-mandir-tour' element={<RamMandir />} /> */}
           <Route path='/packages/europe' element={<Europe />} />
           <Route path='/packages/kashmir' element={<Kashmir />} />
           <Route path='/packages/north-east' element={<NorthEast />} />

@@ -32,70 +32,7 @@ const Packages = () => {
                     </div>
                 </div> */}
 
-                <div className='my-10'>
-                    <div className='flex flex-row md:gap-x-5 gap-x-2 w-full items-center'>
-                        <div className='w-[50%]'>
-                            <div>
-                                <h2 className='md:text-4xl text-2xl font-bold'>Ram Mandir Packages</h2>
-                                <p className='md:text-base text-sm font-normal text-neutral-500'>Popular Packages for Spiritual Journeys</p>
-                            </div>
-                            <div className='w-full flex flex-col md:flex-row md:gap-x-5 gap-y-5 justify-between my-5'>
-                                <Picture
-                                    title={"Ram Mandir"}
-                                    url={RamBg}
-                                    style={"w-full md:h-full h-[250px]"}
-                                />
-                            </div>
-                            <div className='relative'>
-                                <div className='p-2 flex sm:flex-row flex-col sm:gap-5 gap-2 items-center justify-center'>
-                                    {/* <p className='text-lg font-medium text-heading-text'>Price : <span className='font-bold'>$0 <span className='font-medium'>to</span> $0</span></p> */}
-                                    <Link to={"tel:+18885813028"} className='group'>
-                                        <button className='inline-flex items-center gap-x-2 px-6 py-2 md:text-xl text-lg font-medium border-[#144cb5] border rounded-[5px] text-[#144cb5] cursor-pointer'>
-                                            Call us
-                                            <FaPhone className='text-[16px] group-hover:-rotate-[110deg] transition group-hover:scale-105 -rotate-90 mb-1' />
-                                        </button>
-                                    </Link>
-                                    <Link to={'/packages/ram-mandir-tour'} className='group'>
-                                        <button className='inline-flex items-center gap-x-2 px-6 py-2 md:text-xl text-lg font-medium bg-[#144cb5] hover:bg-[#0d3f8f] rounded-[5px] text-[#fff] cursor-pointer'>
-                                            Details
-                                            <FaArrowRight className='text-[12px] group-hover:translate-x-2 transition group-hover:scale-105' />
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='w-[50%]'>
-                            <div>
-                                <h2 className='md:text-4xl text-2xl font-bold'>Hajj & Umrah Packages</h2>
-                                <p className='md:text-base text-sm font-normal text-neutral-500'>Best Packages for Hajj and Umrah Pilgrimages</p>
-                            </div>
-                            <div className='w-full flex flex-col md:flex-row md:gap-x-5 gap-y-5 justify-between my-5'>
-                                <Picture
-                                    title={"Hajj & Umrah"}
-                                    url={Haz_bg}
-                                    style={"w-full md:h-full h-[250px]"}
-                                />
-                            </div>
-                            <div className='relative'>
-                                <div className='p-2 flex sm:flex-row flex-col sm:gap-5 gap-2 items-center justify-center'>
-                                    {/* <p className='text-lg font-medium text-heading-text'>Price : <span className='font-bold'>$0 <span className='font-medium'>to</span> $0</span></p> */}
-                                    <Link to={"tel:+18885813028"} className='group'>
-                                        <button className='inline-flex items-center gap-x-2 px-6 py-2 md:text-xl text-lg font-medium border border-[#144cb5] rounded-[5px] text-[#144cb5] cursor-pointer'>
-                                            Call us
-                                            <FaPhone className='text-[16px] group-hover:-rotate-[110deg] transition group-hover:scale-105 -rotate-90 mb-1' />
-                                        </button>
-                                    </Link>
-                                    <Link to={'/packages/hajj&umrah'} className='group'>
-                                        <button className='inline-flex items-center gap-x-2 px-6 py-2 md:text-xl text-lg font-medium bg-[#144cb5] hover:bg-[#0d3f8f] rounded-[5px] text-[#fff] cursor-pointer'>
-                                            Details
-                                            <FaArrowRight className='text-[12px] group-hover:translate-x-2 transition group-hover:scale-105' />
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div className='my-[5rem]'>
                     <div>
